@@ -10,12 +10,13 @@ function App() {
   const { isLoading } = useAuth0()
 
   if (isLoading) return <div>Loading...</div>
+  
   return (
     <div className="App">
       <h2>Livs bitch ass cawfee shop</h2>
-      <LoginButton />
-      <LogoutButton />
-      <Profile /> 
+        <LoginButton />
+        <LogoutButton />
+        <Profile /> 
     </div>
   );
 }
