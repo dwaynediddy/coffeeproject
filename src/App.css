@@ -1,11 +1,12 @@
 .App {
-  text-align: center;
+  text-align: right;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Papyrus", sans-serif;
 }
 
 body {
