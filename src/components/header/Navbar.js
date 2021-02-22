@@ -4,8 +4,12 @@ import {
     Nav, 
     Bars, 
     NavMenu, 
-    NavBtn, 
+    NavBtn,
+    NavLogo,
+    MobileIcon,
+    NavLinks,
 } from './NavBarElements'
+import { FaBars } from 'react-icons/fa'
 
 import LoginButton from './LoginButton'
 import LogoutButton from './LogoutButton'
@@ -18,14 +22,18 @@ const Navbar = () => {
         <>
             <Nav>
                 <NavLink to='/'>
-                    <h1>Logo</h1>
+                    <NavLogo>Logo</NavLogo>
                 </NavLink>
-                <Bars />
+                <MobileIcon>
+                    <FaBars />
+                </MobileIcon>
+               
                 <NavMenu>
-
                     <NavBtn>
-                        <LoginButton />
-                        <LogoutButton />
+                        <NavLinks>
+                            <LoginButton />
+                            <LogoutButton />
+                        </NavLinks>
                     </NavBtn>
                 </NavMenu>
             </Nav>
