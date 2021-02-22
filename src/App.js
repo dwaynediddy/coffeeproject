@@ -1,13 +1,15 @@
 import './App.css'
-import Navbar from './components/header/Navbar'
 import { BrowserRouter as Router } from 'react-router-dom'
-// import { LinkS } from 'react-scroll'
+import Landing from './screens/Landing'
+
+// import Navbar from './components/header/Navbar'
+// import SideBar from './components/header/sidebar/SideBar'
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Landing />
       </Router>
     </div>
   );

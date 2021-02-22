@@ -17,14 +17,14 @@ import Profile from './Profile'
 
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavLink to='/'>
                     <NavLogo>Logo</NavLogo>
                 </NavLink>
-                <MobileIcon>
+                <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                

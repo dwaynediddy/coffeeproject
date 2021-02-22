@@ -6,14 +6,14 @@ const Profile = () => {
     const { user, isAuthenticated } = useAuth0()
     return (
         isAuthenticated && (
-            <div>
-            <img src={user.picture} alt={user.name} />
-            <h2>{user.name.split('@', 1)}</h2>
-            <p>{user.email}</p>
-            {/* this shows the JSON of user details */}
-            {/* <JSONPretty data={user} /> */}
-            {/* { JSON.stringify(user, null, 2) } */}
-        </div>
+            <div className="profile">
+                <img src={user.picture} alt={user.name} />
+                <h2>{user.name.split('@', 1)}</h2>
+                <p>{user.email}</p>
+                {/* this shows the JSON of user details */}
+                {/* <JSONPretty data={user} /> */}
+                {/* { JSON.stringify(user, null, 2) } */}
+            </div>
         )
     )
 }

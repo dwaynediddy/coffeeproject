@@ -95,7 +95,7 @@ text-decoration: none;
 &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #fff;
+    color: #000;
 }
 `
 export const MobileIcon = styled.div`
