@@ -5,10 +5,7 @@ import {
     Bars, 
     NavMenu, 
     NavBtn, 
-    NavBtnLink 
 } from './NavBarElements'
-
-import { useAuth0 } from '@auth0/auth0-react'
 
 import LoginButton from './LoginButton'
 import LogoutButton from './LogoutButton'
@@ -32,6 +29,9 @@ const Navbar = () => {
                     </NavBtn>
                 </NavMenu>
             </Nav>
+            <div className='userProfile'>
+                <Profile />
+            </div>
         </>
     )
 }

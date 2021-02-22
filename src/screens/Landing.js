@@ -1,9 +1,9 @@
 import React from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
 
-import LoginButton from '../components/LoginButton'
+import LoginButton from '../components/header/LoginButton'
 import LogoutButton from '../components/LogoutButton'
-import Profile from '../components/Profile'
+import Profile from '../components/header/Profile'
 
 const Landing = () => {
     const { isLoading } = useAuth0()
