@@ -45,6 +45,11 @@ margin-left: 24px;
 font-weight: bold;
 text-decoration: none;
 
+&:hover {
+    color: orange;
+    transition: 0.2s ease-in-out;
+}
+
 `
 
 export const Bars = styled(FaBars)`
@@ -127,23 +132,7 @@ export const NavLinks = styled(LinkS)` {
     }
 }
 `
-export const NavbarLink = styled(LinkS)`
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 1.5rem; 
-text-decoration: none;
-list-stye: none;
-transition: 0.2s ease-in-out;
-text-decoration: none;
-color: #fff;
-cursor: pointer;
 
-&:hover {
-    color: orange;
-    transition: 0.2s ease-in-out;
-}
-`
 export const NavIcon = styled.div`
 display:none;
 
@@ -156,6 +145,10 @@ display:none;
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+
+    &:hover {
+        color: orange;
+        transition: 0.2s ease-in-out;
 }
 `
 
