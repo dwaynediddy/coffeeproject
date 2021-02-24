@@ -7,9 +7,14 @@ import {
     NavLogo,
     MobileIcon,
     NavLinks,
+    NavIcon
 } from './NavBarElements'
-import { FaBars } from 'react-icons/fa'
 
+
+import { FaBars } from 'react-icons/fa'
+import { CgProfile } from "react-icons/cg";
+
+//standard 0authlogin
 import LoginButton from './LoginButton'
 import LogoutButton from './LogoutButton'
 import Profile from './Profile'
@@ -24,13 +29,14 @@ const Navbar = ({ toggle }) => {
                     <NavLogo>Logo</NavLogo>
                 </NavLink>
                 <MobileIcon onClick={toggle}>
-                    <FaBars />
+                    <CgProfile />
                 </MobileIcon>
                 <NavMenu>
                     <NavBtn>
                         <NavLinks>
-                            <LoginButton />
-                            <LogoutButton />
+                        <NavIcon onClick={toggle}>
+                             <CgProfile />
+                        </NavIcon>                          
                         </NavLinks>
                     </NavBtn>
                 </NavMenu>

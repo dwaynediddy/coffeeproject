@@ -117,14 +117,45 @@ export const NavLinks = styled(LinkS)` {
     color: #fff;
     display: flex;
     align-items: center;
-    terxt-decoration: none;
-    padding: 0.1rem;
+    text-decoration: none;
+    padding: 2.5rem;
     height: 100%;
     cursor: pointer;
 
     &.active {
         border-bottom: 3px solod #01bf71
     }
+}
+`
+export const NavbarLink = styled(LinkS)`
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem; 
+text-decoration: none;
+list-stye: none;
+transition: 0.2s ease-in-out;
+text-decoration: none;
+color: #fff;
+cursor: pointer;
+
+&:hover {
+    color: orange;
+    transition: 0.2s ease-in-out;
+}
+`
+export const NavIcon = styled.div`
+display:none;
+
+@media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
 }
 `
 

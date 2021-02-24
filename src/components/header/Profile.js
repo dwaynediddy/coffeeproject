@@ -7,8 +7,8 @@ const Profile = () => {
     return (
         isAuthenticated && (
             <div className="profile">
-                <img src={user.picture} alt={user.name} />
-                <h2>{user.name.split('@', 1)}</h2>
+                <img src={user.picture} alt={user.name} className="profilePic"/>
+                <h2>Welcome back {user.name.split('@', 1)}</h2>
                 <p>{user.email}</p>
                 {/* this shows the JSON of user details */}
                 {/* <JSONPretty data={user} /> */}

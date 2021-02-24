@@ -77,7 +77,7 @@ text-align: center;
  display: flex;
  flex-direction: column;
  align-items: center;
- color: #fff;
+//  color: #fff;
  `
 
  export const ArrowForward = styled(MdArrowForward)`

@@ -16,3 +16,11 @@ button {
   cursor: pointer;
 }
 
+.login {
+  padding: 0.5rem;
+}
+
+.logout {
+  padding: 0.5rem;
+  color: #000;
+}
