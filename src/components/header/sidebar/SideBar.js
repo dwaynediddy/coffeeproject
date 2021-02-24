@@ -24,10 +24,10 @@ const SideBar = ({ isOpen, toggle }) => {
                 <SidebarMenu>
                 {/* if adding more pages, or navigation to click click on scroll add onClick={toggle} */}
                     <SidebarLink to='/'>
-                    <LoginButton />
+                        <LoginButton />
                     </SidebarLink>
                     <SidebarLink to='/1'>
-                    <LogoutButton />
+                        <LogoutButton />
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
