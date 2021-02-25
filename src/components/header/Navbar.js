@@ -31,9 +31,10 @@ const Navbar = ({ toggle }) => {
                         <NavItem>
                             <NavBtn>
                                 <NavLinks to="">
-                                    <NavLink to="about">Rewards</NavLink>
-                                    <NavLink to="">social media</NavLink>
-                                    <NavLink to="">Coffee</NavLink>
+                                    <NavLinks to="about">Rewards</NavLinks>
+                                    <NavLinks to="coffee">Coffee</NavLinks>
+                                    <NavLinks to="services">Services</NavLinks>
+                                    <NavLinks to="social">Social Media</NavLinks>
                                     <NavIcon onClick={toggle}>
                                         <CgProfile />         
                                     </NavIcon> 

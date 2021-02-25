@@ -161,9 +161,10 @@ display:none;
 
 @media screen and (min-width: 768px) {
     display: block;
-    position: right;
-    top: 0;
-    right: 0;
+    position: absolute;
+    align-items: right;
+    top: -8px;
+    right: 40px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -182,7 +183,7 @@ export const NavIcon2 = styled(CgShoppingCart)`
     @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
-        align-items: rigth;
+        align-items: right;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
