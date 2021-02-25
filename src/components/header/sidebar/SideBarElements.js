@@ -8,7 +8,7 @@ position: fixed;
 z-index: 999;
 width: 100%;
 height: 100%;
-background: #0d0d
+background: #0d0d;
 display: grid;
 align-items: right;
 top: 0;
@@ -72,10 +72,10 @@ justify-content: center;
 
 export const SidebarRoutes = styled(LinkR)`
 border-radius: 50%;
-background: #01bf71
+background: #01bf71;
 white-space: nowrap;
 padding: 16px 64px;
-color: #000
+color: #000;
 font-size: 16px;
 outline: none;
 border: none;
@@ -86,6 +86,6 @@ text-decoration: none;
 &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #000 
+    color: #000;
 }
 `

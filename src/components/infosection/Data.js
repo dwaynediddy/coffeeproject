@@ -11,7 +11,7 @@ export const homeObjOne = {
     buttonLabel: 'Get Started',
     imgStart: false,
     //image not appearing
-    img: imageOne,
+    img: require('../../images/svg-1.svg'),
     alt: 'Cup',
     dark: true,
     primary: true,
