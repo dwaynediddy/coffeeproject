@@ -12,6 +12,7 @@ import {
 
 import LoginButton from '../LoginButton' 
 import LogoutButton from '../LogoutButton'
+import Profile from '../Profile'
 
 
 const SideBar = ({ isOpen, toggle }) => {
@@ -24,6 +25,7 @@ const SideBar = ({ isOpen, toggle }) => {
                 <SidebarMenu>
                 {/* if adding more pages, or navigation to click click on scroll add onClick={toggle} */}
                     <SidebarLink to='/'>
+                    <Profile />
                         <LoginButton />
                     </SidebarLink>
                     <SidebarLink to='/1'>

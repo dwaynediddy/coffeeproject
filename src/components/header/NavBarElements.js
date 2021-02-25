@@ -9,17 +9,30 @@ import { CgProfile, CgShoppingCart } from "react-icons/cg";
 export const Nav = styled.nav`
 background: #000;
 height: 80px;
-// margin-top: -80px;
+/* margin-top: -80px; */
 display: flex;
 justify-content: space-between;
 align-items: center;
+font-size: 1rem;
+position: sticky;
+top: 0;
 padding: 0.5rem calc((100w - 100px) / 2);
 z-index: 10;
 width: 100%;
 
 @media screen and (min-width: 960px) {
-    transition: 0.8 all ease;
+    transition: 0.8s all ease;
 }
+`
+
+export const NavbarContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    max-width: 1100px;
 `
 
 export const NavLink = styled(Link)`
@@ -53,30 +66,38 @@ text-decoration: none;
 }
 
 `
+// if you want bars for mobile
+// export const Bars = styled(FaBars)`
+// display: none;
+// color: #fff;
 
-export const Bars = styled(FaBars)`
-display: none;
-color: #fff;
+// @media screen and (min-width: 768px) {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     transform: translate(-100, 75%);
+//     font-size: 1.8rem;
+//     cursor: pointer;
+// }
+// `
 
-@media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-`
-export const NavMenu = styled.div`
+export const NavMenu = styled.ul`
 display: flex;
 align-items: center;
+list-style: none;
+text-align: right;
 margin-right: -24px;
 
 @media screen and (max-width: 768px) {
     display: none;
 }
 `
+
+export const NavItem = styled.li`
+    height: 180px;
+`
+
 
 export const NavBtn = styled.nav`
 display:flex;
@@ -105,6 +126,20 @@ text-decoration: none;
     color: #000;
 }
 `
+export const NavLinks = styled(LinkS)` 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 2.5rem;
+    height: 100%;
+    cursor: pointer;
+
+    &.active {
+        border-bottom: 3px solod blue;
+    }
+`
+ 
 export const MobileIcon = styled.div`
 display:none;
 
@@ -120,28 +155,16 @@ display:none;
 }
 `
 
-export const NavLinks = styled(LinkS)` 
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 2.5rem;
-    height: 100%;
-    cursor: pointer;
-
-    &.active {
-        border-bottom: 3px solod #01bf71
-    }
-`
 
 export const NavIcon = styled.div`
 display:none;
 
 @media screen and (min-width: 768px) {
     display: block;
-    position: right;
-    top: 0;
-    right: 0;
+    position: absolute;
+    align-items: right;
+    top: -8px;
+    right: 40px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -160,7 +183,7 @@ export const NavIcon2 = styled(CgShoppingCart)`
     @media screen and (min-width: 768px) {
         display: block;
         position: absolute;
-        align-items: rigth;
+        align-items: right;
         top: 0;
         right: 0;
         transform: translate(-100%, 60%);
