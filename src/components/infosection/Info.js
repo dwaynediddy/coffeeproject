@@ -23,12 +23,19 @@ const Info = ({
     topLine, 
     headline, 
     lightText, 
-    darkText, 
+    darkText,
+    lightTextDesc, 
     description, 
     buttonLabel, 
     img, 
     alt, 
+    primary,
+    dark,
+    dark2
 }) => {
+//picture not appearing from data attempt to import it direct failed
+    var coffeeImage = require('../../images/image2.png')
+
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -40,13 +47,23 @@ const Info = ({
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'>{buttonLabel}</Button>
+                                <Button to='home'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}
+                                primary={primary ? 1 : 0}
+                                dark={dark ? 1: 0}
+                                dark2={dark2 ? 1: 0}
+                                //probably link to signup/in
+                                >{buttonLabel}</Button>
                             </BtnWrap>
                         </TextWrapper>
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={img} alt={alt} />
+                                <Img src={img} alt={alt}/>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
