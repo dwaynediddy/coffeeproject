@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import video from '././video/video.mp4'
-import { Button } from '../ButtonElement'
+import { Button } from '../ButtonElements'
 import { 
     HeroContainer, 
     HeroBg, 
@@ -11,7 +11,7 @@ import {
     HeroBtnWrapper,
     ArrowRight,
     ArrowForward
-} from './HeroElement'
+} from './HeroElements'
 
 import Profile from '../header/Profile'
 

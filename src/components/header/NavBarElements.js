@@ -7,15 +7,15 @@ import { FaBars } from 'react-icons/fa'
 import { CgProfile, CgShoppingCart } from "react-icons/cg";
 
 export const Nav = styled.nav`
-background: #CBE896;
+background: #000;
 height: 80px;
 // margin-top: -80px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 0.5rem calc((100w - 100px) / 2);
-z-index:: 10;
-width: 100%
+z-index: 10;
+width: 100%;
 
 @media screen and (min-width: 960px) {
     transition: 0.8 all ease;
@@ -81,7 +81,7 @@ margin-right: -24px;
 export const NavBtn = styled.nav`
 display:flex;
 align-items: center;
-margin-right: 24px
+margin-right: 24px;
 
 @media screen and (max-width: 768px) {
     display: none;
@@ -91,12 +91,12 @@ margin-right: 24px
 export const NavBtnLink = styled(LinkR)`
 border-radius: 4px;
 background: #fff;
-padding: 10px 22px:
+padding: 10px 22px;
 color: #fff;
 border: none;
 outline: none;
 cursor: pointer;
-transition: all 0.2s ease-in-out
+transition: all 0.2s ease-in-out;
 text-decoration: none;
 
 &:hover {
@@ -120,7 +120,7 @@ display:none;
 }
 `
 
-export const NavLinks = styled(LinkS)` {
+export const NavLinks = styled(LinkS)` 
     color: #fff;
     display: flex;
     align-items: center;
@@ -132,10 +132,9 @@ export const NavLinks = styled(LinkS)` {
     &.active {
         border-bottom: 3px solod #01bf71
     }
-}
 `
 
-export const NavIcon = styled.div`{
+export const NavIcon = styled.div`
 display:none;
 
 @media screen and (min-width: 768px) {
@@ -151,11 +150,11 @@ display:none;
     &:hover {
         color: orange;
         transition: 0.2s ease-in-out;
-}
+    }
 }
 `
 
-export const NavIcon2 = styled(CgShoppingCart)`{
+export const NavIcon2 = styled(CgShoppingCart)`
     display:none;
     
     @media screen and (min-width: 768px) {
@@ -172,7 +171,7 @@ export const NavIcon2 = styled(CgShoppingCart)`{
         &:hover {
             color: orange;
             transition: 0.2s ease-in-out;
-    }
+        }
     }
     `
 

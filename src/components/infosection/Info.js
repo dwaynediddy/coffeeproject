@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from 'react-scroll'
+import { Button } from '../ButtonElements'
 
 import { 
     InfoContainer,
@@ -16,32 +16,61 @@ import {
     Img,
  } from './InfoElements'
 
-const info = () => {
+const Info = ({ 
+    lightBg, 
+    id, 
+    imgStart, 
+    topLine, 
+    headline, 
+    lightText, 
+    darkText,
+    lightTextDesc, 
+    description, 
+    buttonLabel, 
+    img, 
+    alt, 
+    primary,
+    dark,
+    dark2
+}) => {
+//picture not appearing from data attempt to import it direct failed
+    var coffeeImage = require('../../images/image2.png')
+
     return (
         <>
-            <InfoContainer />
-            <InfoWrapper>
-                <InfoRow>
-                    <Column1>
-                    <TextWrapper>
-                        <TopLine>TopLine</TopLine>
-                        <Heading>Header</Heading>
-                        <Subtitle>Subtitle</Subtitle>
-                        <BtnWrap>
-                            <Button to='home'/>
-                        </BtnWrap>
-                    </TextWrapper>
-                    </Column1>
-                    <Column2>
-                        <ImgWrap>
-                            <Img />
-                        </ImgWrap>
-                    </Column2>
-
-                </InfoRow>
-            </InfoWrapper>
+            <InfoContainer lightBg={lightBg} id={id}>
+                <InfoWrapper>
+                    <InfoRow imgStart={imgStart}>
+                        <Column1>
+                        <TextWrapper>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
+                            <BtnWrap>
+                                <Button to='home'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}
+                                primary={primary ? 1 : 0}
+                                dark={dark ? 1: 0}
+                                dark2={dark2 ? 1: 0}
+                                //probably link to signup/in
+                                >{buttonLabel}</Button>
+                            </BtnWrap>
+                        </TextWrapper>
+                        </Column1>
+                        <Column2>
+                            <ImgWrap>
+                                <Img src={img} alt={alt}/>
+                            </ImgWrap>
+                        </Column2>
+                    </InfoRow>
+                </InfoWrapper>
+            </InfoContainer>
         </>
     )
 }
 
-export default info
+export default Info
