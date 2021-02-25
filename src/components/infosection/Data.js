@@ -1,4 +1,6 @@
-var imageOne = require('../../images/svg-1.svg')
+import Icon1 from '../../images/svg-1.svg'
+import Icon2 from '../../images/image2.png'
+import Icon3 from '../../images/png2.png'
 
 export const homeObjOne = {
     id: 'about',
@@ -10,8 +12,7 @@ export const homeObjOne = {
     description: 'Access to a Reward system for our loyal coffee lovers to say Thanks!',
     buttonLabel: 'Get Started',
     imgStart: false,
-    //image not appearing
-    img: require('../../images/svg-1.svg'),
+    img: Icon1,
     alt: 'Cup',
     dark: true,
     primary: true,
@@ -28,8 +29,7 @@ export const homeObjTwo = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et',
     buttonLabel: 'Get Started',
     imgStart: true,
-    //image not appearing
-    img: imageOne,
+    img: Icon2,
     alt: 'Cup',
     dark: false,
     primary: false,
@@ -46,8 +46,7 @@ export const homeObjThree = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et',
     buttonLabel: 'Get Started',
     imgStart: false,
-    //image not appearing
-    img: imageOne,
+    img: Icon3,
     alt: 'Cup',
     dark: true,
     primary: true,

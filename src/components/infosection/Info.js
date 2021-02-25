@@ -1,10 +1,6 @@
 import React from 'react'
 import { Button } from '../ButtonElements'
 
-import Icon1 from '../../images/svg-1.svg'
-import Icon2 from '../../images/svg-1.svg'
-import Icon3 from '../../images/svg-1.svg'
-
 import { 
     InfoContainer,
     InfoWrapper,
@@ -67,7 +63,7 @@ const Info = ({
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={Icon1} alt={alt}/>
+                                <Img src={img} alt={alt}/>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
