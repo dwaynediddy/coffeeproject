@@ -4,6 +4,8 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 
+import { CgProfile, CgShoppingCart } from "react-icons/cg";
+
 export const Nav = styled.nav`
 background: #CBE896;
 height: 80px;
@@ -133,12 +135,12 @@ export const NavLinks = styled(LinkS)` {
 }
 `
 
-export const NavIcon = styled.div`
+export const NavIcon = styled.div`{
 display:none;
 
 @media screen and (min-width: 768px) {
     display: block;
-    position: absolute;
+    position: right;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
@@ -150,7 +152,30 @@ display:none;
         color: orange;
         transition: 0.2s ease-in-out;
 }
+}
 `
+
+export const NavIcon2 = styled(CgShoppingCart)`{
+    display:none;
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        align-items: rigth;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    
+        &:hover {
+            color: orange;
+            transition: 0.2s ease-in-out;
+    }
+    }
+    `
+
 
 
 

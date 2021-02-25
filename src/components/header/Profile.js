@@ -6,10 +6,11 @@ const Profile = () => {
     const { user, isAuthenticated } = useAuth0()
     return (
         isAuthenticated && (
+            // user information to be displayed
             <div className="profile">
-                <img src={user.picture} alt={user.name} className="profilePic"/>
+                {/* <img src={user.picture} alt={user.name} className="profilePic"/> */}
                 <h2>Welcome back {user.name.split('@', 1)}</h2>
-                <p>{user.email}</p>
+                {/* <p>{user.email}</p> */}
                 {/* this shows the JSON of user details */}
                 {/* <JSONPretty data={user} /> */}
                 {/* { JSON.stringify(user, null, 2) } */}
