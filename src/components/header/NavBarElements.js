@@ -7,7 +7,7 @@ import { FaBars } from 'react-icons/fa'
 import { CgProfile, CgShoppingCart } from "react-icons/cg";
 
 export const Nav = styled.nav`
-background: #CBE896;
+background: #000;
 height: 80px;
 // margin-top: -80px;
 display: flex;
