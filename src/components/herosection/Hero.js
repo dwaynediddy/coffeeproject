@@ -13,6 +13,8 @@ import {
     ArrowForward
 } from './HeroElement'
 
+import Profile from '../header/Profile'
+
 const HeroSection = () => {
     const [hover, setHover] = useState(false)
 
@@ -26,6 +28,7 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={video} type="video/mp4" />
             </HeroBg>
             <HeroContent>
+                <Profile />
                 <HeroH1>Come drink some mother fucking coffee</HeroH1>
                     <HeroP>
                         sign up and get rewards and shit,
