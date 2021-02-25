@@ -1,0 +1,16 @@
+export const homeObjOne = {
+    id: 'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Livs coffee',
+    headline: 'Get all your coffee needs from Liv',
+    description: 'Access to a Reward system which for our loyal coffee lovers to say Thanks',
+    buttonLabel: 'Get Started',
+    imgStart: false,
+    img: require('../../images/svg-1.svg'),
+    alt: 'Cup',
+    dark: true,
+    primary: true,
+    darkText: false,
+}
