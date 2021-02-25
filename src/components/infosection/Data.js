@@ -39,8 +39,8 @@ export const homeObjTwo = {
 export const homeObjThree = {
     id: 'about',
     lightBg: false,
-    lightText: false,
-    lightTextDesc: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'lorum ipsum',
     headline: 'Lorem ipsum dolor sit amet',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et',
