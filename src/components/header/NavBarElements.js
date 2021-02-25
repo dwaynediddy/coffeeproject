@@ -1,15 +1,16 @@
 import styled from 'styled-components'
-import { NavLink as Link } from 'react-router-dom'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
+
+//if you want bars for side menu
 import { FaBars } from 'react-icons/fa'
 
-import { CgProfile, CgShoppingCart } from "react-icons/cg";
+import { CgShoppingCart } from "react-icons/cg";
 
 export const Nav = styled.nav`
 background: #000;
 height: 80px;
-/* margin-top: -80px; */
+margin-top: -80px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -33,20 +34,6 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 24px;
     max-width: 1100px;
-`
-
-export const NavLink = styled(Link)`
-color: #fff;
-display:flex;
-align-items: center;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
-
-&:active {
-    color: #15cdfc;
-}
 `
 
 export const NavLogo = styled(LinkR)`
@@ -136,7 +123,7 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solod blue;
+        border-bottom: 3px solid #01bf;
     }
 `
  
@@ -154,7 +141,6 @@ display:none;
     color: #fff;
 }
 `
-
 
 export const NavIcon = styled.div`
 display:none;

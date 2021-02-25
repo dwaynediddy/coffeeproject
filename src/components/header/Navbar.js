@@ -1,7 +1,6 @@
 import React from 'react'
 import { 
-    NavbarContainer,
-    NavLink, 
+    NavbarContainer, 
     Nav, 
     NavMenu, 
     NavBtn,
@@ -21,9 +20,9 @@ const Navbar = ({ toggle }) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLink to='/'>
+                    <NavLinks to='/'>
                         <NavLogo>Logo</NavLogo>
-                    </NavLink>
+                    </NavLinks>
                     <MobileIcon onClick={toggle}>
                         <CgProfile />
                     </MobileIcon>
