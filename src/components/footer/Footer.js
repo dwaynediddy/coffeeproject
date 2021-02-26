@@ -61,7 +61,6 @@ const Footer = () => {
                             All rights reserved.
                         </WebsiteRights>
                         <SocialIcon>
-
                             <SocialIconLink href="/" target="_blank"
                             aria-label="Facebook">
                                 <FaFacebook />
