@@ -5,6 +5,7 @@ import HeroSection from '../components/herosection/Hero'
 import Info from '../components/infosection/Info'
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/infosection/Data'
 import Service from '../components/services/Service'
+import Footer from '../components/footer/Footer'
 
 const Landing = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,6 +23,7 @@ const Landing = () => {
            <Info {...homeObjTwo} />
            <Service />
            <Info {...homeObjThree} />
+           <Footer />
         </>
     )
 }
