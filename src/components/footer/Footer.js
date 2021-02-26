@@ -63,9 +63,7 @@ const Footer = () => {
                         >
                             logo
                         </SocialLogo>
-                        <WebsiteRights>logo © {new Date().getFullYear()}
-                            All rights reserved.
-                        </WebsiteRights>
+                        <WebsiteRights> logo© {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcon>
                             <SocialIconLink href="/" target="_blank"
                             aria-label="Facebook">
