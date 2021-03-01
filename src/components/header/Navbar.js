@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLinks to='/'>
-                        <NavLogo onClick={toggleHome}L>Logo</NavLogo>
+                        <NavLogo onClick={toggleHome}>Logo</NavLogo>
                     </NavLinks>
                     <MobileIcon onClick={toggle}>
                         <CgProfile />

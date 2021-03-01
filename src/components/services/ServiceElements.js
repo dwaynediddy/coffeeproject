@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link as LinkR } from 'react-router-dom'
 
 export const ServiceContainer = styled.div`
     height: 900px;
@@ -80,3 +81,23 @@ export const ServiceWrapper = styled.div`
         font-size: 1rem;
         text-align: center;
     `
+
+    export const BtnWrap = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    color: blue;
+
+    &:hover {
+        color: green;
+    }
+    `
+
+export const NavLinks = styled(LinkR)` 
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 2.5rem;
+height: 100%;
+cursor: pointer;
+`

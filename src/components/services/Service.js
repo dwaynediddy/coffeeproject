@@ -1,7 +1,7 @@
 import React from 'react'
-import Icon1 from '../../images/svg-1.svg'
-import Icon2 from '../../images/svg-1.svg'
-import Icon3 from '../../images/svg-1.svg'
+import Icon1 from '../../images/drip.png'
+import Icon2 from '../../images/bamboo.png'
+import Icon3 from '../../images/grinder.png'
 import { 
     ServiceContainer, 
     ServiceH1, 
@@ -10,13 +10,20 @@ import {
     ServiceIcon,
     ServiceH2,
     ServiceP,
-    
+    BtnWrap,
+    NavLinks,
 } from './ServiceElements'
 
-const Service = () => {
+import { Button } from '../ButtonElements'
+
+const Store = () => {
+    'https://livscoffeeshopshop.netlify.app/'
+}
+
+const Service = ({ primary, dark, dark2, }) => {
     return (
         <ServiceContainer id='services'>
-            <ServiceH1>Services</ServiceH1>
+            <ServiceH1>Products</ServiceH1>
             <ServiceWrapper>
                 <ServiceCard>
                     <ServiceIcon src={Icon1} />
@@ -33,6 +40,23 @@ const Service = () => {
                     <ServiceH2>lorum ipsum</ServiceH2>
                     <ServiceP>lorum ipsum</ServiceP>
                 </ServiceCard>
+                <NavLinks>
+                    <BtnWrap>
+                        <Button 
+                            to='/https://livscoffeeshopshop.netlify.app/'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                            primary={primary ? 1 : 0}
+                            dark={dark ? 1: 0}
+                            dark2={dark2 ? 1: 0}
+                                //Link to shop
+                            >Go to Store
+                        </Button>
+                    </BtnWrap>
+                </NavLinks>
             </ServiceWrapper>
         </ServiceContainer>
     )
