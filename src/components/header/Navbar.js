@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Link, Switch, Route  } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll'
+
+
+
 import { 
     NavbarContainer, 
     Nav, 

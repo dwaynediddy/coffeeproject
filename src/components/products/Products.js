@@ -1,10 +1,10 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 
-import Product from './products/Product'
+import Product from './Product'
 
-import Bamboo from '../images/bamboo.png'
-import Drip from '../images/drip.png'
+import Bamboo from '../../images/bamboo.png'
+import Drip from '../../images/drip.png'
 
 
 const products = [

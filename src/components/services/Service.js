@@ -1,4 +1,8 @@
 import React from 'react'
+import { BrowserRouter, Switch, Route, Link }  from 'react-router-dom'
+
+import Products from '../products/Products'
+
 import Icon1 from '../../images/drip.png'
 import Icon2 from '../../images/bamboo.png'
 import Icon3 from '../../images/grinder.png'
@@ -15,9 +19,6 @@ import {
 } from './ServiceElements'
 
 import { Button } from '../ButtonElements'
-
-import { BrowserRouter as Route } from 'react-router-dom'
-
 
 const Service = ({ primary, dark, dark2, }) => {
 
@@ -43,7 +44,6 @@ const Service = ({ primary, dark, dark2, }) => {
                 <NavLinks>
                     <BtnWrap>
                         <Button 
-                            to='/https://livscoffeeshopshop.netlify.app/'
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -53,7 +53,12 @@ const Service = ({ primary, dark, dark2, }) => {
                             dark={dark ? 1: 0}
                             dark2={dark2 ? 1: 0}
                                 //Link to shop
-                            >Go to Store
+                            >
+                                <ul>
+                                    <li>
+                                        <Link to='/products'>Go to Store</Link>
+                                    </li>
+                                </ul>
                         </Button>
                     </BtnWrap>
                 </NavLinks>
