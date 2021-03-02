@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Link, Switch, Route  } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll'
+
+
+
 import { 
     NavbarContainer, 
     Nav, 
@@ -41,7 +45,7 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLinks to='/'>
-                        <NavLogo onClick={toggleHome}L>Logo</NavLogo>
+                        <NavLogo onClick={toggleHome}>Logo</NavLogo>
                     </NavLinks>
                     <MobileIcon onClick={toggle}>
                         <CgProfile />
