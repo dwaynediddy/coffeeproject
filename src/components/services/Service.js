@@ -16,11 +16,11 @@ import {
 
 import { Button } from '../ButtonElements'
 
-const Store = () => {
-    'https://livscoffeeshopshop.netlify.app/'
-}
+import { BrowserRouter as Route } from 'react-router-dom'
+
 
 const Service = ({ primary, dark, dark2, }) => {
+
     return (
         <ServiceContainer id='services'>
             <ServiceH1>Products</ServiceH1>
