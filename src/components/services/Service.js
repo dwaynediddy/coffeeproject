@@ -54,11 +54,9 @@ const Service = ({ primary, dark, dark2, }) => {
                             dark2={dark2 ? 1: 0}
                                 //Link to shop
                             >
-                                <ul>
-                                    <li>
-                                        <Link to='/products'>Go to Store</Link>
-                                    </li>
-                                </ul>
+                            <Link to='/products'>
+                                Go to Store
+                            </Link>        
                         </Button>
                     </BtnWrap>
                 </NavLinks>
