@@ -11,8 +11,6 @@ function App() {
           <Route exact path="/" component={Landing} />
           <Route path="/products" component={Product} />
         </Switch>
-        {/* <Landing />
-        <Product /> */}
       </Router>
     </div>
   );

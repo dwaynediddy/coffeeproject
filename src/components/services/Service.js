@@ -1,7 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route, Link }  from 'react-router-dom'
-
-import Products from '../products/Products'
+import { Link }  from 'react-router-dom'
 
 import Icon1 from '../../images/drip.png'
 import Icon2 from '../../images/bamboo.png'
