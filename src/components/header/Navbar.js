@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Link, Switch, Route  } from 'react-router-dom'
 import { animateScroll as scroll } from 'react-scroll'
 
 
@@ -74,7 +73,7 @@ const Navbar = ({ toggle }) => {
                                       spy={true}
                                       exact='true' 
                                       offset={-80}
-                                    >Services</NavLinks>
+                                    >Products</NavLinks>
                                     <NavLinks to="social"
                                       smooth={true}
                                       duration={500}
