@@ -1,7 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route, Link }  from 'react-router-dom'
-
-import Products from '../products/Products'
+import { Link }  from 'react-router-dom'
 
 import Icon1 from '../../images/drip.png'
 import Icon2 from '../../images/bamboo.png'
@@ -54,7 +52,7 @@ const Service = ({ primary, dark, dark2, }) => {
                             dark2={dark2 ? 1: 0}
                                 //Link to shop
                             >
-                            <Link to='/products'>
+                            <Link to='/StoreApp'>
                                 Go to Store
                             </Link>        
                         </Button>
