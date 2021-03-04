@@ -30,6 +30,16 @@ function StoreApp() {
     setCart(item.cart)
   }
 
+  const handleUpdatetoCartQty = async (productId, quantity) => {
+    const { cart } = await commerce.cart.add(productId, { quantity })
+    
+    setCart(cart)
+  }
+  
+  const handleRemoveFromCart = async (productId) => {
+    const { cart } = await commerce.cart.remove(productId)
+  }
+
   useEffect(() => {
     fetchProducts()
     fetchCart()
