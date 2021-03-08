@@ -29,11 +29,11 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <Profile />
-                <HeroH1>Come drink some mother fucking coffee</HeroH1>
+                <HeroH1>Come, Enjoy, Coffee</HeroH1>
                     <HeroP>
-                        sign up and get rewards and shit,
-                        like free cawfee.
-                        thats about it.
+                        sign up and get rewards,
+                        like free coffee,
+                        Discounted Merch.
                     </HeroP>
                 <HeroBtnWrapper>
                     {/* <Button to='signup' 
